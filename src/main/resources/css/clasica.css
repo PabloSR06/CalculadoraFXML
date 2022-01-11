@@ -1,0 +1,23 @@
+
+
+#view{
+    -fx-background-color:  #333333;
+    -fx-font: monospace;
+    -fx-hgap: 1px;
+    -fx-vgap: 1px;
+}
+#screenText{
+    -fx-fill: red;
+
+
+}
+
+.button:focused{
+    -fx-border-color: white; 
+}
+.button:armed{
+    -fx-border-color: yellow; 
+}
+#igualButton{
+    -fx-background-color:  orangered;
+}
