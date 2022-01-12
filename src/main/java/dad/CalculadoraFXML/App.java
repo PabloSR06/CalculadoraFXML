@@ -15,6 +15,7 @@ public class App extends Application {
 		
 		Scene scene = new Scene(controller.getView());
 		
+		
 		primaryStage.setTitle("CalculadoraFXML");
 		primaryStage.setScene(scene);
 		primaryStage.show();

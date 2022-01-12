@@ -52,6 +52,9 @@ public class Controller implements Initializable {
 
 	@FXML
 	private Button comaButton;
+	
+	@FXML
+	private Button ceroButton;
 
 	@FXML
 	private Button unoButton;
@@ -92,6 +95,8 @@ public class Controller implements Initializable {
 	public void initialize(URL location, ResourceBundle resources) {
 		//pantalla
 		screenText.textProperty().bind(screen);
+		
+		//view.getStylesheets().add("/css/moderno.css");
 
 		borrarTodoButton.setOnAction(e -> onOperatorAction(borrarTodoButton.getText()));
 		borrarButton.setOnAction(e -> onOperatorAction(borrarButton.getText()));
