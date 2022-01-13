@@ -12,6 +12,8 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.control.ContextMenu;
+import javafx.scene.control.MenuItem;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 
@@ -107,6 +109,28 @@ public class Controller implements Initializable {
 		comaButton.setOnAction(e -> onOperatorAction(comaButton.getText()));
 		igualButton.setOnAction(e -> onOperatorAction(igualButton.getText()));
 
+		//menu contextual
+		view.getStylesheets().add("/css/clasica.css");
+
+		MenuItem clasicoItem = new MenuItem("Clasico");
+		clasicoItem.setOnAction(e -> {
+			view.getStylesheets().remove(0);
+		
+
+			view.getStylesheets().add("/css/clasica.css");
+		});
+		
+		MenuItem modernoItem = new MenuItem("Moderno");
+		modernoItem.setOnAction(e -> {
+			view.getStylesheets().remove(0);
+			view.getStylesheets().add("/css/moderno.css");
+		});
+		
+		ContextMenu menu = new ContextMenu(clasicoItem, modernoItem);
+		
+		view.setOnContextMenuRequested(e -> {
+			menu.show(view, e.getSceneX(), e.getSceneY());
+		});
 	}
 
 	@FXML
