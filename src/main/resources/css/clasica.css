@@ -1,29 +1,22 @@
-
-
 #view{
     -fx-background-color:  #333333;
-    -fx-font: monospace;
+    -fx-font-family: monospace;
     -fx-hgap: 1px;
     -fx-vgap: 1px;
 }
 #screenText{
     -fx-text-fill: lightgrey;
     -fx-font-size: 25px;
-    -fx-alignment: right;
+    -fx-alignment: center-right;
     -fx-font-weight: bold;
     -fx-padding: 10px 10px 10px 10px;
     -fx-background-color: transparent;
-
-
 }
-
 .button{
     -fx-font-size: 16px;
     -fx-border-radius: 0px;
-    -fx-border-insets: 0 px
+    -fx-border-insets: 0px;
 }
-
-
 .numeros{
     -fx-background-color:  darkgray;
     -fx-text-fill: white;
